@@ -3,294 +3,435 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Workout Generator - Privacy Policy</title>
+    <title>Privacy Policy — JSON.fit</title>
+    <meta name="description" content="JSON.fit Privacy Policy. Your workouts, meals and health data stay on your device. We use anonymous, non-identifying analytics to improve the app.">
+    <link rel="icon" type="image/x-icon" href="https://json.fit/favicon-3.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://json.fit/icon-32-3.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://json.fit/icon-192-3.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://json.fit/icon-180-3.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        :root {
+            --cyan: #22d3ee;
+            --cyan-dim: rgba(34, 211, 238, 0.15);
+            --bg: #000000;
+            --card: #0a0a0b;
+            --card-border: #18181b;
+            --text: #ffffff;
+            --text-secondary: #a1a1aa;
+            --text-muted: #71717a;
         }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: linear-gradient(135deg, #0a0a0b 0%, #1a1a1b 100%);
-            color: #ffffff;
-            line-height: 1.6;
-            padding: 20px;
-            min-height: 100vh;
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Outfit', sans-serif;
+            -webkit-font-smoothing: antialiased;
         }
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 60px;
-            padding: 40px 0;
-        }
-
-        .logo {
-            width: 80px;
-            height: 80px;
-            background: linear-gradient(135deg, #22d3ee 0%, #06b6d4 100%);
-            border-radius: 20px;
-            margin: 0 auto 20px;
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            padding: 1.25rem 2rem;
             display: flex;
             align-items: center;
-            justify-content: center;
-            font-size: 32px;
-            font-weight: bold;
-            color: #0a0a0b;
+            justify-content: space-between;
+            background: rgba(0,0,0,0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(34, 211, 238, 0.08);
         }
 
-        .title {
-            font-size: 48px;
+        .nav-logo {
+            font-family: 'JetBrains Mono', monospace;
             font-weight: 800;
-            background: linear-gradient(135deg, #22d3ee 0%, #06b6d4 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 16px;
-        }
-
-        .subtitle {
-            font-size: 18px;
-            color: #94a3b8;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .last-updated {
-            text-align: center;
-            color: #71717a;
-            margin-bottom: 40px;
-            font-size: 14px;
-        }
-
-        .section {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            border-radius: 16px;
-            padding: 32px;
-            margin-bottom: 32px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        h2 {
-            font-size: 24px;
-            font-weight: 700;
-            color: #22d3ee;
-            margin-bottom: 20px;
-        }
-
-        h3 {
-            font-size: 20px;
-            font-weight: 600;
-            color: #ffffff;
-            margin: 24px 0 16px 0;
-        }
-
-        p {
-            color: #d1d5db;
-            margin-bottom: 16px;
-            line-height: 1.7;
-        }
-
-        ul, ol {
-            margin-left: 24px;
-            margin-bottom: 16px;
-        }
-
-        li {
-            color: #d1d5db;
-            margin-bottom: 8px;
-        }
-
-        strong {
-            color: #ffffff;
-        }
-
-        .contact-info {
-            background: rgba(34, 211, 238, 0.1);
-            padding: 24px;
-            border-radius: 12px;
-            border: 1px solid rgba(34, 211, 238, 0.2);
-            text-align: center;
-        }
-
-        .contact-info a {
-            color: #22d3ee;
+            font-size: 1.25rem;
+            color: var(--text);
             text-decoration: none;
+        }
+
+        .nav-logo span { color: var(--cyan); }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 7rem 2rem 4rem;
+        }
+
+        .back {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            display: inline-block;
+            padding-bottom: 1.5rem;
+            text-decoration: none;
+            letter-spacing: 0.03em;
+        }
+
+        .back:hover {
+            color: var(--cyan);
+        }
+
+        .page-header {
+            margin-bottom: 3rem;
+        }
+
+        .page-header h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            margin-bottom: 0.75rem;
+        }
+
+        .page-header .subtitle {
+            color: var(--cyan);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+        }
+
+        .page-header .updated {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-top: 0.5rem;
+        }
+
+        .info-box {
+            display: flex;
+            gap: 0.75rem;
+            padding: 1rem 1.25rem;
+            border-radius: 12px;
+            background: var(--cyan-dim);
+            border: 1px solid rgba(34, 211, 238, 0.2);
+            margin: 1rem 0 1.5rem;
+        }
+
+        .info-box-icon {
+            color: var(--cyan);
+            font-size: 1.2rem;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .info-box p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .info-box strong {
+            color: var(--cyan);
+            font-weight: 700;
+        }
+
+        section {
+            margin-bottom: 2.5rem;
+        }
+
+        section h2 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: var(--text);
+        }
+
+        section p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 0.75rem;
+        }
+
+        section strong {
+            color: var(--cyan);
             font-weight: 600;
         }
 
-        .contact-info a:hover {
-            text-decoration: underline;
+        section a {
+            color: var(--cyan);
+            text-decoration: none;
         }
+
+        section a:hover { text-decoration: underline; }
+
+        .sub-heading {
+            color: var(--cyan);
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 1rem;
+        }
+
+        ul li {
+            color: var(--text-secondary);
+            font-size: 0.92rem;
+            line-height: 1.7;
+            padding-left: 1.25rem;
+            position: relative;
+            margin-bottom: 0.25rem;
+        }
+
+        ul li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--text-muted);
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid var(--card-border);
+            margin: 2rem 0;
+        }
+
+        footer {
+            border-top: 1px solid var(--card-border);
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .footer-logo {
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 800;
+            font-size: 1rem;
+            color: var(--text);
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-logo span { color: var(--cyan); }
+
+        footer p {
+            color: var(--text-muted);
+            font-size: 0.8rem;
+        }
+
+        footer a {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover { color: var(--cyan); }
 
         @media (max-width: 768px) {
-            .title {
-                font-size: 36px;
-            }
-
-            .section {
-                padding: 24px;
-            }
+            .container { padding: 6rem 1.25rem 3rem; }
+            .page-header h1 { font-size: 2rem; }
+            nav { padding: 1rem 1.25rem; }
         }
     </style>
+    <script src="https://json.fit/analytics-web.js"
+            data-endpoint="https://kmgao3kfmhtqu47poior5mbqce0nyxfx.lambda-url.ap-southeast-2.on.aws/"
+            data-app-version="web"
+            data-secret="d34039086646a0a1fdb3a3697742ca44"></script>
 </head>
 <body>
+    <nav>
+        <a href="https://json.fit/" class="nav-logo">
+            <svg style="display:inline-block;vertical-align:middle;margin-right:0.4rem;" width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0" y="3" width="4" height="8" rx="1.5" fill="#22d3ee"/>
+                <rect x="18" y="3" width="4" height="8" rx="1.5" fill="#22d3ee"/>
+                <rect x="4" y="5" width="14" height="4" rx="2" fill="#22d3ee"/>
+            </svg>
+            JSON<span>.fit</span>
+        </a>
+    </nav>
+
     <div class="container">
-        <div class="header">
-            <div class="logo">JSON</div>
-            <h1 class="title">Privacy Policy</h1>
-            <p class="subtitle">AI Workout Generator Privacy Policy</p>
+        <a href="https://json.fit/" class="back" onclick="if(history.length>1){history.back();return false;}">← Back</a>
+        <div class="page-header">
+            <h1>Privacy Policy</h1>
+            <div class="subtitle">🔒 Your workouts, meals and health data stay on your device.</div>
+            <div class="updated">Last Updated: 29 September 2026</div>
         </div>
 
-        <div class="last-updated">
-            <strong>Last Updated:</strong> January 28, 2026
-        </div>
-
-        <div class="section">
-            <h2>1. Introduction</h2>
-            <p>AppLabs ("we," "our," or "us") operates the AI Workout Generator mobile application (the "Service"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our Service.</p>
-            <p>By using AI Workout Generator, you consent to the data practices described in this policy. If you do not agree with this policy, please do not use our Service.</p>
-        </div>
-
-        <div class="section">
-            <h2>2. Data Storage and Collection</h2>
-            <p>AI Workout Generator is designed with privacy in mind. We prioritize local data storage and minimize server-side data collection.</p>
-            
-            <h3>Information We Collect:</h3>
-            <ul>
-                <li><strong>Workout Data:</strong> Exercise routines, workout logs, progress tracking, and training statistics stored locally on your device</li>
-                <li><strong>Account Information:</strong> Email address and basic profile information for account creation and support</li>
-                <li><strong>Usage Analytics:</strong> Anonymous app usage patterns to improve functionality (collected via privacy-focused analytics)</li>
-                <li><strong>Purchase Information:</strong> In-app purchase data managed through RevenueCat for subscription management</li>
-                <li><strong>AI Integration Data:</strong> Temporary processing of workout program imports (not stored permanently)</li>
-                <li><strong>Feedback Data:</strong> Optional feedback submissions to improve AI-generated workout quality</li>
-            </ul>
-
-            <h3>Local Storage Priority:</h3>
-            <p>Your workout routines, exercise logs, and personal fitness data are stored locally on your device. This ensures your sensitive fitness information remains under your control and is not transmitted to external servers unless explicitly required for specific features.</p>
-        </div>
-
-        <div class="section">
-            <h2>3. How We Use Your Information</h2>
-            <p>We use the collected information for the following purposes:</p>
-            <ul>
-                <li>Providing and maintaining the AI Workout Generator service</li>
-                <li>Processing workout program imports and validating exercise data</li>
-                <li>Managing your subscription through RevenueCat integration</li>
-                <li>Sending important service notifications and updates</li>
-                <li>Improving app functionality based on anonymous usage patterns</li>
-                <li>Providing customer support and responding to inquiries</li>
-                <li>Enhancing AI workout generation algorithms through optional feedback</li>
-                <li>Ensuring app security and preventing misuse</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>4. Information Sharing and Disclosure</h2>
-            <p>We do not sell, trade, or rent your personal information to third parties. We may share information only in the following circumstances:</p>
-            
-            <h3>Service Providers:</h3>
-            <ul>
-                <li><strong>RevenueCat:</strong> Subscription and in-app purchase management</li>
-                <li><strong>AWS Lambda:</strong> Processing feedback submissions (anonymous)</li>
-                <li><strong>Analytics Providers:</strong> Anonymous usage analytics for app improvement</li>
-            </ul>
-
-            <h3>Legal Requirements:</h3>
-            <p>We may disclose your information if required by law, regulation, legal process, or governmental request.</p>
-
-            <h3>Business Transfers:</h3>
-            <p>In the event of a merger, acquisition, or sale of assets, user information may be transferred as part of the transaction.</p>
-        </div>
-
-        <div class="section">
-            <h2>5. Data Security</h2>
-            <p>We implement appropriate technical and organizational measures to protect your information:</p>
-            <ul>
-                <li>Local data encryption on your device</li>
-                <li>Secure HTTPS connections for all network communications</li>
-                <li>Regular security audits and updates</li>
-                <li>Minimal data transmission - most data stays on your device</li>
-                <li>Industry-standard encryption for any cloud-stored data</li>
-            </ul>
-            <p>However, no method of transmission over the internet or electronic storage is 100% secure. While we strive to protect your information, we cannot guarantee absolute security.</p>
-        </div>
-
-        <div class="section">
-            <h2>6. Your Privacy Rights</h2>
-            <p>You have the following rights regarding your personal information:</p>
-            <ul>
-                <li><strong>Access:</strong> Request information about data we collect and process</li>
-                <li><strong>Rectification:</strong> Correct inaccurate or incomplete information</li>
-                <li><strong>Erasure:</strong> Request deletion of your personal data</li>
-                <li><strong>Data Portability:</strong> Export your workout data in standard formats</li>
-                <li><strong>Withdrawal of Consent:</strong> Opt out of data collection where consent is required</li>
-                <li><strong>Account Deletion:</strong> Delete your account and associated data at any time</li>
-            </ul>
-            <p>To exercise these rights, contact us at ryan.novinc@gmail.com.</p>
-        </div>
-
-        <div class="section">
-            <h2>7. AI Integration and External Services</h2>
-            <p>AI Workout Generator integrates with AI assistants (ChatGPT, Claude, etc.) through user-initiated actions:</p>
-            <ul>
-                <li>We provide prompts for users to copy and use with their chosen AI service</li>
-                <li>Users manually copy AI-generated workout programs into our app</li>
-                <li>We do not directly access or store conversations with AI services</li>
-                <li>JSON workout data is processed locally for validation and import</li>
-                <li>No personal fitness data is sent to AI services without explicit user action</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>8. Cookies and Tracking Technologies</h2>
-            <p>AI Workout Generator may use cookies and similar technologies to:</p>
-            <ul>
-                <li>Remember your preferences and settings</li>
-                <li>Analyze app usage patterns (anonymously)</li>
-                <li>Improve app performance and functionality</li>
-            </ul>
-            <p>You can control cookie preferences through your device settings.</p>
-        </div>
-
-        <div class="section">
-            <h2>9. Children's Privacy</h2>
-            <p>AI Workout Generator is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If we become aware that a child under 13 has provided personal information, we will take steps to delete such information.</p>
-        </div>
-
-        <div class="section">
-            <h2>10. International Data Transfers</h2>
-            <p>Your information may be transferred to and processed in countries other than your own. We ensure appropriate safeguards are in place to protect your information during international transfers.</p>
-        </div>
-
-        <div class="section">
-            <h2>11. Changes to This Privacy Policy</h2>
-            <p>We may update this Privacy Policy from time to time. We will notify you of any changes by:</p>
-            <ul>
-                <li>Posting the new Privacy Policy in the app</li>
-                <li>Updating the "Last Updated" date</li>
-                <li>Sending email notifications for material changes</li>
-            </ul>
-            <p>Your continued use of the Service after changes constitutes acceptance of the updated policy.</p>
-        </div>
-
-        <div class="section">
-            <h2>12. Contact Information</h2>
-            <div class="contact-info">
-                <p><strong>AppLabs / Ryan Novinc</strong></p>
-                <p>ABN: 47 908 118 705</p>
-                <p>Email: <a href="mailto:ryan.novinc@gmail.com">ryan.novinc@gmail.com</a></p>
-                <p>Support: <a href="https://ryannovinc.github.io/JSON-support/">AI Workout Generator Support</a></p>
+        <section>
+            <h2>The short version</h2>
+            <div class="info-box">
+                <span class="info-box-icon">🛡️</span>
+                <p><strong>Your fitness and nutrition data stays on your device.</strong> JSON.fit has no accounts and never uploads your workouts, meal plans or health information in the background. A plan leaves your device only when you choose to share it, and feedback only when you choose to send it. To understand how the app and website are used and to make them better, we collect <strong>anonymous, non-identifying usage analytics</strong>. We don't show ads and we never sell your data.</p>
             </div>
-            <p style="margin-top: 20px;">If you have any questions about this Privacy Policy or our privacy practices, please contact us using the information above.</p>
-        </div>
+            <p>This policy explains, in plain English, exactly what that means for the JSON.fit iOS and Android apps and for the JSON.fit website (json.fit).</p>
+        </section>
+
+        <section>
+            <h2>1. Who we are</h2>
+            <p>JSON.fit is built and operated by Ryan Novinc (a sole trader based in Australia). In this policy, "JSON.fit", "we", "us" and "our" refer to that operation. "App" means the JSON.fit mobile app on the App Store and Google Play. "Website" means json.fit and its pages.</p>
+            <p>If you have any privacy question, you can reach us any time at <a href="mailto:support@json.fit">support@json.fit</a>.</p>
+        </section>
+
+        <section>
+            <h2>2. Data that stays on your device (and is never collected by us)</h2>
+            <p>The app is designed to keep your personal fitness and nutrition information <strong>local to your device</strong>. We do not receive it, store it on our servers, or send it anywhere, unless you choose to share a plan or send us feedback (see section 3). Because this data is processed only on your device, it is not "collected" by us. This includes:</p>
+
+            <p class="sub-heading">Fitness &amp; workout data</p>
+            <ul>
+                <li>Imported workout routines and training programs</li>
+                <li>Exercise progress, logs and workout calendar data</li>
+                <li>Personal notes and customisations</li>
+            </ul>
+
+            <p class="sub-heading">Nutrition &amp; health data</p>
+            <ul>
+                <li>Nutrition goals and macro targets</li>
+                <li>Health conditions, dietary restrictions and food preferences</li>
+                <li>Weight tracking history and measurements</li>
+                <li>Meal plans, recipes and cooking instructions</li>
+                <li>Food inventory, grocery lists, and any budget or location info you enter for pricing</li>
+                <li>Supplement intake, meal timing and meal-prep sessions</li>
+            </ul>
+
+            <p class="sub-heading">App preferences</p>
+            <ul>
+                <li>App settings and preferences</li>
+            </ul>
+
+            <p>This information may be included in your device's own backups (for example iCloud or Google backups). Those backups are managed entirely by Apple or Google under their privacy policies — we have no access to them.</p>
+        </section>
+
+        <section>
+            <h2>3. Data we do collect</h2>
+
+            <p class="sub-heading">a. Anonymous usage &amp; diagnostics analytics</p>
+            <p>To understand how JSON.fit is actually used — which features help, where people get stuck, whether something is broken — the app and website collect anonymous, non-identifying analytics. This is the only meaningful data we collect about how you use JSON.fit. It typically includes:</p>
+            <ul>
+                <li>App and website interactions and events (for example screens viewed, features used, and actions like importing a plan or program)</li>
+                <li>General device and technical information (device type, operating system, app version, browser type, language)</li>
+                <li>An approximate region derived from your IP address (for example country or city level)</li>
+                <li>Diagnostic and crash information that helps us fix problems</li>
+            </ul>
+            <p>This analytics data is <strong>not linked to your identity</strong>. We do not attach your name, email, or your on-device workout/nutrition data to it, and we do not use it to build an advertising profile of you or to track you across other companies' apps or websites.</p>
+            <p>Which tools do this depends on where you are:</p>
+            <ul>
+                <li><strong>In the app:</strong> only our own first-party analytics, hosted on Amazon Web Services (AWS) in Sydney. The app generates a random identifier on first launch so events from the same install can be grouped. It is not your name, email, advertising ID or anything else we could link to you. The app contains no third-party analytics or advertising SDKs.</li>
+                <li><strong>On the website:</strong> <strong>Google Analytics</strong> (Google LLC) to measure usage (see <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">how Google uses information from sites that use its services</a>), and <strong>Microsoft Clarity</strong> (Microsoft Corporation) for behavioural analytics including heatmaps and session replays, with sensitive content masked by default (see the <a href="https://privacy.microsoft.com/privacystatement" target="_blank" rel="noopener">Microsoft Privacy Statement</a>).</li>
+            </ul>
+
+            <p class="sub-heading">b. Things you can choose to send us from the app</p>
+            <ul>
+                <li><strong>Feedback, ratings and bug reports.</strong> If you send feedback from the app we receive the text you write, your rating, and the app version, platform, operating system version and device model, so we can reproduce problems. Please don't put personal or health information in feedback.</li>
+                <li><strong>Share links.</strong> If you share a workout program or meal plan, that plan is uploaded to our server (AWS, Sydney) and given a link. Anyone with the link can view the plan until it expires, seven days after it was created. A meal plan can include the calorie and macro targets it was built for, so only share plans you're happy for others to see. Your exercise logs, weight history and questionnaire answers are never included.</li>
+            </ul>
+
+            <p class="sub-heading">c. Email address (free cookbook / newsletter)</p>
+            <p>If you choose to enter your email address, on the website or inside the app, to receive the free cookbook and updates, we collect that email so we can send it to you. It is entirely optional — you never have to provide it to use the app. Email subscriptions are handled through our email infrastructure on Amazon Web Services (AWS). You can unsubscribe at any time using the link in any email we send, or by emailing <a href="mailto:support@json.fit">support@json.fit</a>.</p>
+
+            <p class="sub-heading">d. Purchases</p>
+            <p>JSON.fit is free. There are currently no subscriptions and no in-app purchases, so we do not process or store any payment information. If we ever add purchases, they will be handled by Apple or Google and we will update this policy first.</p>
+        </section>
+
+        <section>
+            <h2>4. What we never do</h2>
+            <ul>
+                <li>We don't show ads.</li>
+                <li>We don't sell, rent or trade your data.</li>
+                <li>We don't build advertising profiles or track you across other companies' apps and websites.</li>
+                <li>We don't put personal information (such as your name or email) into our analytics.</li>
+                <li>We don't upload your on-device workout, nutrition or health data in the background. Only a plan you choose to share, or feedback you choose to send, ever leaves your device.</li>
+                <li>We don't require an account.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>5. Cookies, identifiers &amp; your choices</h2>
+            <p>To make analytics work, the website uses cookies and similar technologies. The app uses no cookies and does not use your device's advertising identifier; it uses only the random per-install identifier described above. Both are used only for the anonymous analytics described above, never for advertising.</p>
+            <p>You can limit or switch off this analytics at any time:</p>
+            <ul>
+                <li><strong>On the web:</strong> install the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics opt-out browser add-on</a>, or block/clear cookies in your browser.</li>
+                <li><strong>In the app:</strong> the random analytics identifier is deleted when you delete the app, and reinstalling starts a fresh one.</li>
+            </ul>
+            <p>If you are in the European Economic Area, the United Kingdom or Switzerland, non-essential analytics and cookies are only intended to run where this is permitted under local law. If you would prefer not to be measured at all, you can use the opt-out options above or simply not use the website.</p>
+        </section>
+
+        <section>
+            <h2>6. Sharing and third parties</h2>
+            <p>We only share data with the service providers we use to run JSON.fit, and only so they can perform their service for us:</p>
+            <ul>
+                <li>Google (Google Analytics) — website only</li>
+                <li>Microsoft (Microsoft Clarity) — website only</li>
+                <li>Amazon Web Services (hosting for our own analytics, feedback, share links and email)</li>
+            </ul>
+            <p>We may also disclose information where we are legally required to do so (for example in response to a valid legal request), or to protect the rights, safety or property of JSON.fit, our users or the public. We do not otherwise share your data.</p>
+        </section>
+
+        <section>
+            <h2>7. International data transfers</h2>
+            <p>Our analytics and email providers (Google, Microsoft and AWS) may process data in the United States and other countries. Where data is transferred internationally, these providers maintain their own legal safeguards for that transfer (for example, certification under the EU–US Data Privacy Framework). Your on-device workout, nutrition and health data does not leave your device, so it is not transferred internationally by us.</p>
+        </section>
+
+        <section>
+            <h2>8. Data retention</h2>
+            <p>Anonymous analytics data is retained only for limited periods, in line with each provider's settings (for example, Microsoft Clarity retains data for up to 13 months, and Google Analytics retention is time-limited). Share links expire and are deleted seven days after they are created. Feedback you send is kept until we have acted on it, or until you ask us to delete it. If you subscribe to the cookbook/newsletter, we keep your email until you unsubscribe. Data stored on your device remains there until you delete it or uninstall the app.</p>
+        </section>
+
+        <section>
+            <h2>9. Your privacy rights</h2>
+            <p>You can ask us to access, correct or delete personal information we hold about you, and to object to or restrict how we use it. In practice the personal information we may hold is your email address (if you subscribed), feedback you sent us, and any plan you chose to share (until it expires). Your fitness and nutrition data is on your device, under your control, and you can delete it directly in the app at any time. Email us and we will delete feedback or a share link on request.</p>
+            <p>To make a request, email <a href="mailto:support@json.fit">support@json.fit</a>. Depending on where you live (for example the EEA, the UK, or California), you may have additional rights under laws such as the GDPR, UK GDPR or CCPA/CPRA; we will honour those rights where they apply. We won't charge you for making a request or treat you differently for exercising your rights.</p>
+        </section>
+
+        <section>
+            <h2>10. Children's privacy</h2>
+            <p>JSON.fit is intended for users aged 13 and over. We do not knowingly collect personal information from children under 13, and our analytics is not directed at children. If you believe a child has provided us with personal information (for example, by subscribing with an email address), contact <a href="mailto:support@json.fit">support@json.fit</a> and we will delete it.</p>
+        </section>
+
+        <section>
+            <h2>11. Security</h2>
+            <p>Data on your device is protected by your device's own security (such as your passcode and biometric lock), so keeping your device updated and secured protects that data. Analytics data we collect is transmitted over encrypted (HTTPS/TLS) connections.</p>
+            <p><strong>Important:</strong> JSON.fit is not a substitute for professional medical advice. Always consult a healthcare professional for medical, nutrition or dietary decisions, especially if you have a health condition.</p>
+        </section>
+
+        <section>
+            <h2>12. Changes to this policy</h2>
+            <p>We may update this policy from time to time. When we do, we'll change the "Last Updated" date above, and significant changes will be communicated through the app or website.</p>
+        </section>
+
+        <section>
+            <h2>13. Contact</h2>
+            <p>Questions about this policy or your data? Email us at <a href="mailto:support@json.fit">support@json.fit</a>.</p>
+        </section>
     </div>
+
+    <footer>
+        <div class="footer-logo">JSON<span>.fit</span></div>
+        <p>
+            <a href="https://json.fit/">Home</a> ·
+            <a href="https://json.fit/terms-of-service.html">Terms of Service</a> ·
+            <a href="mailto:support@json.fit">Support</a>
+        </p>
+        <p style="margin-top: 0.75rem;">© 2026 JSON.fit. All rights reserved.</p>
+    </footer>
+
+<script>
+(function(){
+  document.addEventListener('click',function(e){
+    var a=e.target;
+    while(a&&a.tagName!=='A')a=a.parentElement;
+    if(!a||!a.href)return;
+    try{
+      var h=new URL(a.href).hostname;
+      if(!h||h===location.hostname)return;
+      var label;
+      if(h==='apps.apple.com')label='app_store';
+      else if(h==='www.youtube.com'||h==='youtu.be')label='youtube';
+      else{var p=h.replace(/^www\./,'').split('.');var s=p[p.length-2]||p[0];label=s==='nih'?'pubmed':s;}
+      if(window.track)window.track('outbound_click',{url:label});
+    }catch(err){}
+  },true);
+})();
+</script>
 </body>
 </html>
